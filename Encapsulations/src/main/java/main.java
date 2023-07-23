@@ -5,9 +5,13 @@ public class main {
         Car car = new Car();
         car.describeCar();
         car.setModel("verna");   //---------setting the value-----------//
-        car.setMake("hyun");
+        car.setMake("hyun");     //---------setting the value-----------//
 
         System.out.println("car is " + car.getModel());  //---------getting the value-----------//
 
     }
 }
+
+
+
+
