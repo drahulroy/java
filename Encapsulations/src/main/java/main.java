@@ -7,7 +7,7 @@ public class main {
         car.setModel("verna");   //---------setting the value-----------//
         car.setMake("hyun");     //---------setting the value-----------//
 
-        System.out.println("car is " + car.getModel());  //---------getting the value-----------//
+        System.out.println("car is " + car.getMake());  //---------getting the value-----------//
 
     }
 }

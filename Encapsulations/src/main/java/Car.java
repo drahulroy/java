@@ -25,8 +25,16 @@ public class Car {
         return convertible;
     }
 
+
     public void setMake(String make) {
-        this.make = make;
+        if (make == null) make = "Unknown";                             //----------Validations----------//
+        String lowercaseMake = make.toLowerCase();                       //----------Validations----------//
+        switch (lowercaseMake) {                                          //----------Validations----------//
+            case "holden", "porsche", "tesla" -> this.make = make;         //----------Validations----------//
+        default -> {                                                        //----------Validations----------//
+            this.make = "Unsupported ";                                      //----------Validations----------//
+        }
+        }
     }
 
     public void setModel(String model) {
